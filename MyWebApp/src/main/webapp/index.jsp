@@ -7,6 +7,6 @@
 <title> hello </title>
 </head>
 <body>
-<%= "Hello World 12345 !" %>
+<%= "Hello World  !" %>
 </body>
 </html>
