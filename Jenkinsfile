@@ -4,12 +4,7 @@ pipeline {
     tools {
      maven 'Maven3'
    }
-    stages {
-      stage('checkout') {
-          steps {
-            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'bb0b9360-4096-49b1-bc81-b9e9292770e3', url: 'https://github.com/bhushan243/myRepoForJavaApp.git']])
-          }
-      }
+   
     
       stage ('Build') {
          steps {
@@ -97,5 +92,5 @@ pipeline {
       }
     } 
       
-    }
+    
 }
